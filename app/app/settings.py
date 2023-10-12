@@ -43,7 +43,11 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'core',
     'user',
+    'recipe',
 ]
+# docker run -d --name postgresCont -p 5432:5432 -e POSTGRES_PASSWORD=pass123 postgres
+# f5fcdb75a2c5000b2b129c9e601518988f534f73fd857824e60dbdd21552d3bd
+# docker run --name my-pgadmin -p 82:80 -e 'PGADMIN_DEFAULT_EMAIL=laiba@yahoo.com' -e 'PGADMIN_DEFAULT_PASSWORD=pass123' -d dpage/pgadmin4
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
